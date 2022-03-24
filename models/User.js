@@ -17,7 +17,7 @@ const UserSchema = new Schema(
       type: String,
       required: true,
       unique: true,
-      validate: [validateEmail, 'Please enter a valid email!']
+      validate: [validEmail, 'Please enter a valid email!']
     },
     thoughts: [
       {
