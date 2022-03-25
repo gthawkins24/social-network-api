@@ -1,6 +1,5 @@
 const { User, Thought } = require('../models');
 const { db } = require('../models/User');
-const { param } = require('../routes');
 
 const userController = {
   getAllUsers(req, res) {
@@ -106,6 +105,6 @@ const userController = {
         console.log(err)
       });
   },
-
-  
 }
+
+module.exports = userController;
